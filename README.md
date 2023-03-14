@@ -1,5 +1,6 @@
 # Curso Front-end
 #### EBAC
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Eleonilson/Curso_Frontend/blob/main/LICENCE)
 
 # GIT
 ## Conceitos de versionamento
