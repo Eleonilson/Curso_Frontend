@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>HTML - Layouts</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            background: #ccc;
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+</body>
+
+<header>
+    <h2>Curso Front-end - HTML</h2>
+</header>
+
+<section>
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="./homepage.html">Sobre</a></li>
+            <li><a href="./06-formularios.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h1>Título Artigo</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue mauris sit amet nibh finibus, ut auctor
+            metus volutpat. Sed ultricies sed odio a ullamcorper. Cras id tempor tellus, quis iaculis libero. Aliquam
+            pulvinar varius purus eu interdum. Praesent luctus nibh ex, vel ultricies lacus rhoncus vel. Proin dolor
+            magna, mollis id porttitor et, suscipit non lectus. Sed tincidunt, lectus eu suscipit commodo, eros mauris
+            lacinia nisl, nec sollicitudin nisl magna ut ipsum.</p>
+
+        <p>Ut porttitor lacinia est. Suspendisse placerat semper justo non accumsan. Vestibulum pellentesque arcu
+            finibus sapien rhoncus, nec volutpat purus porta. Phasellus id sem non augue sagittis gravida. Vestibulum
+            aliquet lacus at lectus bibendum mollis. Sed odio ante, porta quis finibus et, pulvinar vitae dolor. Sed in
+            tincidunt risus. Donec porttitor purus ac condimentum lobortis. Phasellus interdum semper nisi. In
+            imperdiet, nisl consectetur pharetra vulputate, nunc turpis accumsan est, vel porttitor turpis nisl in nisl.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum vel ex scelerisque lorem gravida
+            vehicula. Vivamus ac pharetra dolor.</p>
+
+        <p>Pellentesque quis ex a nunc molestie interdum. Curabitur et tincidunt erat. Nam ultricies nisl ac sem
+            accumsan blandit. Sed gravida maximus dignissim. Duis interdum quis orci vitae mattis. Donec nec ex eu
+            lectus venenatis bibendum. Sed dictum et augue sit amet tincidunt. Ut sed metus varius, blandit justo et,
+            varius nibh. In in urna ut quam lobortis rhoncus. Pellentesque sit amet tellus eros. Suspendisse cursus
+            pulvinar tempus.</p>
+
+        <p>Generated 3 paragraphs, 235 words, 1577 bytes of Lorem Ipsum</p>
+    </article>
+</section>
+<footer>
+    <p>Desenvolvido por Eleonilson</p>
+</footer>
+
+</html>
